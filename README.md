@@ -14,7 +14,7 @@ To setup your actor class add the following:
 
 By default, TrackMe looks for an event class called 'Event'. If you would like
 to change this then set the following:
-  `self.event_kalss = CLASS`
+  `self.event_klass = CLASS`
 
 Once setup, you can track a users activity in the following way:
   `current_user.track_me(category: 'View', label: 'Homepage')
