@@ -78,8 +78,8 @@ class MessagesController
   # … existing controller code
 
   def create
-    @sender = User.find(params[:sender_id])
     # … existing code
+    @sender = User.find(params[:sender_id])
     @sender.track_me(category: 'Message', label: 'New', value: @message.body)
   end
 
