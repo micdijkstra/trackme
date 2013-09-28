@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'track_me/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "track_me"
+  spec.name          = "trackme"
   spec.version       = TrackMe::VERSION
   spec.authors       = ["Michael Dijkstra"]
   spec.email         = ["micdijkstra@gmail.com"]
