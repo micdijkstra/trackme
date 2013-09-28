@@ -6,11 +6,11 @@
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 #
 
-require 'track_me'
+require 'trackme'
 
 require 'app/models/user.rb'
 require 'app/models/event.rb'
-require 'support/track_me_helper.rb'
+require 'support/trackme_helper.rb'
 
 RSpec.configure do |config|
   config.treat_symbols_as_metadata_keys_with_true_values = true

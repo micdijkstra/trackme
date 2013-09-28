@@ -1,6 +1,8 @@
 module TrackMe
   module Event
-    extend ActiveSupport::Concern
+    def self.included(base)
+      base.extend(ClassMethods)
+    end
 
     module ClassMethods
       def publish(actor, data={})

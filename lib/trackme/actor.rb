@@ -1,6 +1,7 @@
 module TrackMe
+
   module Actor
-    extend ActiveSupport::Concern
+
     attr_accessor :event_klass
 
     def track_me(options={})
@@ -18,4 +19,5 @@ module TrackMe
        @event_klass ||= event_klass ? event_klass.classify.constantize : ::Event
     end
   end
+
 end

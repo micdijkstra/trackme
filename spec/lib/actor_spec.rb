@@ -13,6 +13,10 @@ describe TrackMe do
       it "is valid with category and label" do
         expect{ user.track_me(data) }.not_to raise_error
       end
+
+      it "still uses existing methods" do
+        User.existing_instance_method.should eq(true)
+      end
     end
   end
 end
