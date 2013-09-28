@@ -35,7 +35,11 @@ TrackMe requires the following fields to save events:
 
 ## Rails Example
 
-First, you need to setup a model to be the actor, this is most likely going to
+First, add the track_me to your Gemfile:
+
+  `gem 'track_me'`
+
+Next, you need to setup a model to be the actor, this is most likely going to
 be your `User` model.
 
 ```ruby
