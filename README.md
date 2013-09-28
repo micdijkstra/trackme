@@ -83,6 +83,8 @@ class MessagesController
 end
 ```
 
+That's it! Now you are able to track users activity.
+
 ## Contributing
 
 1. Fork it
