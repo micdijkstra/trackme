@@ -53,6 +53,7 @@ In a Rails app backed by Postgress you would set this up with by running the
 following on the command line:
 
   `rails g model event actor:integer category:text label:text value:text`
+
   `rake db:migrate`
 
 And add the following to your `Event` model:
