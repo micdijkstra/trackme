@@ -17,7 +17,7 @@ to change this then set the following:
   `self.event_klass = CLASS`
 
 Once setup, you can track a users activity in the following way:
-  `current_user.track_me(category: 'View', label: 'Homepage')
+  `current_user.track_me(category: 'View', label: 'Homepage')`
 
 ## Details
 
