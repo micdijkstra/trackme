@@ -1,5 +1,5 @@
-require "track_me/version"
-
-module TrackMe
-  # Your code goes here...
-end
+require 'active_support'
+require 'track_me/version'
+require 'track_me/actor.rb'
+require 'track_me/errors.rb'
+require 'track_me/event.rb'
