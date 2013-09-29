@@ -24,14 +24,17 @@ Once setup, you can track a users activity in the following way:
 TrackMe events have the following options:
 + `:actor` (required) - The object that did the event
 + `:category` (required)- The event category, such as 'Message'
-+ `:label` (option)- The label of the event category, such as 'New'
-+ `:value` (option)- The value of the event category label, such as 'Hello Bob!'
++ `:label` (optional)- The label of the event category, such as 'New'
++ `:value` (optional)- The value of the event category label, such as 'Hello Bob!'
++ `:created_at` (optional)- The date the event occurred, such as '2013-09-29
+  12:00:00'
 
-TrackMe requires the following fields to save events:
+TrackMe needs the following fields to save events:
 + `actor_id` - Integer
 + `category` - String
 + `label` - String
 + `value` - String
++ `created_at` - Date/Time
 
 ## Rails Example
 

@@ -14,6 +14,11 @@ describe TrackMe do
         event = Event.publish(user, data)
         event.class.should eq(Event)
       end
+
+      it "can override the create date" do
+        event = Event.publish(user, { created_at: Time.new(2013) }.merge(data))
+        event.created_at.should eq(Time.new(2013))
+      end
     end
 
     describe ".create" do

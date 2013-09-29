@@ -1,5 +1,8 @@
 module TrackMe
   module Event
+    attr_reader :actor, :category, :label, :value, :created_at
+    attr_writer :actor, :category, :label, :value, :created_at
+
     def self.included(base)
       base.extend(ClassMethods)
     end
